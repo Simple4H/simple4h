@@ -6,11 +6,11 @@
         <groupId>com.simple4h</groupId>
         <artifactId>simple4h</artifactId>
         <version>0.0.1</version>
-        <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <artifactId>simple4h-user</artifactId>
     <version>0.0.1</version>
     <name>simple4h-user</name>
+    <packaging>jar</packaging>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -22,12 +22,7 @@
     </dependencies>
 
     <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
+
     </build>
 
 </project>
