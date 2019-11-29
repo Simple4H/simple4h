@@ -35,3 +35,4 @@ hs_err_pid*
 !/.idea/
 /simple4h-product/target/
 /simple4h-user/target/
+!/.idea/
