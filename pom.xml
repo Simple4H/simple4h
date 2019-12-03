@@ -26,14 +26,6 @@
         <maven.test.skip>true</maven.test.skip>
     </properties>
 
-    <repositories>
-        <repository>
-            <!--此名称要和.m2/settings.xml中设置的ID一致 -->
-            <id>simple4h</id>
-            <url>http://47.110.246.152:8081/repository/simple4h-common/</url>
-        </repository>
-    </repositories>
-
     <dependencies>
 
         <dependency>

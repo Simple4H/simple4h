@@ -1,6 +1,6 @@
 package com.simple4h;
 
-import com.simple4h.common.DateUtils;
+import com.simple4h.utils.DateUtils;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 

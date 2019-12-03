@@ -92,11 +92,11 @@ public class DateUtils {
     }
 
     public static Date startOfDate(LocalDate localDate) {
-        return com.simple4h.common.DateUtils.toDate(localDate.atStartOfDay());
+        return DateUtils.toDate(localDate.atStartOfDay());
     }
 
     public static Date endOfDate(LocalDate localDate) {
-        return com.simple4h.common.DateUtils.toDate(localDate.atTime(LocalTime.MAX));
+        return DateUtils.toDate(localDate.atTime(LocalTime.MAX));
     }
 
     /**
