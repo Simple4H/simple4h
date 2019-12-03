@@ -4,6 +4,6 @@ spring:
   cloud:
     nacos:
       discovery:
-        server-addr: www.cxm520hyq.com:8848/
+        server-addr: 47.110.246.152:8848/
 server:
   port: 9000
