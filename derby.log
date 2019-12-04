@@ -1,6 +1,6 @@
 ----------------------------------------------------------------
-Wed Dec 04 16:18:13 CST 2019:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.1.1 - (1458268): instance a816c00e-016e-cffc-faf4-00001a961bf8 
+Wed Dec 04 16:25:12 CST 2019:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.1.1 - (1458268): instance a816c00e-016e-d003-6032-00001b6ec1c0 
 on database directory /Users/simple4h/nacos/data/derby-data with class loader sun.misc.Launcher$AppClassLoader@18b4aac2 
 Loaded from file:/Users/simple4h/.m2/repository/org/apache/derby/derby/10.10.1.1/derby-10.10.1.1.jar
 java.vendor=Oracle Corporation
