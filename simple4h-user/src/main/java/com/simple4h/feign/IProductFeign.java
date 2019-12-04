@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * Create By Simple4H
  * Date: 2019-12-03 08:30
  */
-@FeignClient(value = "simple4h-product")
+@FeignClient(name = "simple4h-product")
 public interface IProductFeign {
 
     @GetMapping("/product/get_name")
