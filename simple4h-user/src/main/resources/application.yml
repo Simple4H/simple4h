@@ -5,5 +5,15 @@ spring:
     nacos:
       discovery:
         server-addr: 47.110.246.152:8848/
+    sentinel:
+      transport:
+        dashboard: 47.110.246.152:8843
+      datasource:
+        flow:
+          nacos:
+            server-addr: 47.110.246.152:8848
+            dataId: sentinel-dashboard
+            groupId: DEFAULT_GROUP
+            rule-type: flow
 server:
   port: 8000
