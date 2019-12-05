@@ -7,9 +7,9 @@
         <artifactId>simple4h</artifactId>
         <version>0.0.1</version>
     </parent>
-    <artifactId>simple4h-product</artifactId>
+    <artifactId>simple4h-gateway</artifactId>
     <version>0.0.1</version>
-    <name>simple4h-product</name>
+    <name>simple4h-gateway</name>
     <packaging>jar</packaging>
     <description>Demo project for Spring Boot</description>
 
@@ -21,12 +21,22 @@
 
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-dependencies</artifactId>
+            <artifactId>spring-cloud-starter-gateway</artifactId>
         </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-webflux</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-dependencies</artifactId>
         </dependency>
 
         <dependency>
@@ -34,23 +44,19 @@
             <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/com.alibaba.cloud/spring-cloud-starter-alibaba-sentinel -->
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/com.alibaba.csp/sentinel-datasource-nacos -->
         <dependency>
             <groupId>com.alibaba.csp</groupId>
             <artifactId>sentinel-datasource-nacos</artifactId>
-            <!--            <scope>test</scope>-->
         </dependency>
 
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <optional>true</optional>
         </dependency>
 
         <dependency>
