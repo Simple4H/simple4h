@@ -9,7 +9,7 @@ nacos-all/distribution/conf/nacos-mysql.sql
 
 nacos-all/console/src/main/resources/application.properties
 
-3，启动nacos
+3，启动nacos(添加启动参数-Dnacos.standalone=true--单例)
 
 nacos-all/console/src/main/java/com/alibaba/nacos/Nacos.java
 
