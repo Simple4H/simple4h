@@ -24,20 +24,19 @@
 
     <properties>
         <java.version>1.8</java.version>
-        <starter-web-version>2.2.1.RELEASE</starter-web-version>
         <spring-cloud.version>Hoxton.RELEASE</spring-cloud.version>
-        <maven.test.skip>true</maven.test.skip>
-        <starter-openfeign-version>2.2.0.RELEASE</starter-openfeign-version>
-        <starter-test-version>2.2.1.RELEASE</starter-test-version>
-        <alibaba-sentinel-version>2.1.1.RELEASE</alibaba-sentinel-version>
-        <sentinel-datasource-nacos-version>1.7.0</sentinel-datasource-nacos-version>
-        <lombok-version>1.18.10</lombok-version>
         <alibaba-nacos-discovery-version>0.9.0.RELEASE</alibaba-nacos-discovery-version>
+        <starter-openfeign-version>2.2.0.RELEASE</starter-openfeign-version>
+        <starter-web-version>2.2.1.RELEASE</starter-web-version>
+        <sentinel-datasource-nacos-version>1.7.0</sentinel-datasource-nacos-version>
+        <alibaba-sentinel-version>2.1.1.RELEASE</alibaba-sentinel-version>
+        <starter-test-version>2.2.1.RELEASE</starter-test-version>
+        <maven.test.skip>true</maven.test.skip>
+        <lombok-version>1.18.10</lombok-version>
         <maven-plugin-version>2.2.1.RELEASE</maven-plugin-version>
     </properties>
 
     <dependencyManagement>
-
         <dependencies>
 
             <dependency>
@@ -50,14 +49,34 @@
 
             <dependency>
                 <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-web</artifactId>
-                <version>${starter-web-version}</version>
+                <artifactId>spring-boot-starter-test</artifactId>
+                <version>${starter-test-version}</version>
+                <scope>test</scope>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.junit.vintage</groupId>
+                        <artifactId>junit-vintage-engine</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-alibaba-nacos-discovery -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+                <version>${alibaba-nacos-discovery-version}</version>
             </dependency>
 
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-starter-openfeign</artifactId>
                 <version>${starter-openfeign-version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-web</artifactId>
+                <version>${starter-web-version}</version>
             </dependency>
 
             <!-- https://mvnrepository.com/artifact/com.alibaba.cloud/spring-cloud-starter-alibaba-sentinel -->
@@ -80,26 +99,6 @@
                 <artifactId>lombok</artifactId>
                 <version>${lombok-version}</version>
                 <optional>true</optional>
-            </dependency>
-
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-test</artifactId>
-                <version>${starter-test-version}</version>
-                <scope>test</scope>
-                <exclusions>
-                    <exclusion>
-                        <groupId>org.junit.vintage</groupId>
-                        <artifactId>junit-vintage-engine</artifactId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
-
-            <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-alibaba-nacos-discovery -->
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
-                <version>${alibaba-nacos-discovery-version}</version>
             </dependency>
 
         </dependencies>
