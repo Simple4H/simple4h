@@ -19,6 +19,7 @@
         <module>simple4h-product</module>
         <module>simple4h-user</module>
         <module>simple4h-gateway</module>
+        <module>simple4h-common</module>
     </modules>
 
     <properties>
