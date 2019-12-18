@@ -2,12 +2,6 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.2.1.RELEASE</version>
-        <relativePath/> <!-- lookup parent from repository -->
-    </parent>
     <groupId>com.simple4h</groupId>
     <artifactId>simple4h</artifactId>
     <version>0.0.1</version>
@@ -24,25 +18,33 @@
 
     <properties>
         <java.version>1.8</java.version>
-        <spring-cloud.version>Hoxton.RELEASE</spring-cloud.version>
-        <alibaba-nacos-discovery-version>0.9.0.RELEASE</alibaba-nacos-discovery-version>
-        <starter-openfeign-version>2.2.0.RELEASE</starter-openfeign-version>
-        <starter-web-version>2.2.1.RELEASE</starter-web-version>
-        <sentinel-datasource-nacos-version>1.7.0</sentinel-datasource-nacos-version>
-        <alibaba-sentinel-version>2.1.1.RELEASE</alibaba-sentinel-version>
-        <starter-test-version>2.2.1.RELEASE</starter-test-version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <spring.boot.version>2.2.2.RELEASE</spring.boot.version>
+        <spring.cloud.version>Hoxton.RELEASE</spring.cloud.version>
+        <alibaba.nacos.discovery.version>0.9.0.RELEASE</alibaba.nacos.discovery.version>
+        <starter.openfeign.version>2.2.0.RELEASE</starter.openfeign.version>
+        <sentinel.datasource.nacos.version>1.7.0</sentinel.datasource.nacos.version>
+        <alibaba.sentinel.version>2.1.1.RELEASE</alibaba.sentinel.version>
         <maven.test.skip>true</maven.test.skip>
-        <lombok-version>1.18.10</lombok-version>
-        <maven-plugin-version>2.2.1.RELEASE</maven-plugin-version>
+        <lombok.version>1.18.10</lombok.version>
+        <cloud.gateway.version>2.2.0.RELEASE</cloud.gateway.version>
+        <maven-compiler-plugin-version>3.8.1</maven-compiler-plugin-version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
 
+            <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter</artifactId>
+                <version>${spring.boot.version}</version>
+            </dependency>
+
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
-                <version>${spring-cloud.version}</version>
+                <version>${spring.cloud.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -50,7 +52,7 @@
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-test</artifactId>
-                <version>${starter-test-version}</version>
+                <version>${spring.boot.version}</version>
                 <scope>test</scope>
                 <exclusions>
                     <exclusion>
@@ -64,40 +66,40 @@
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
-                <version>${alibaba-nacos-discovery-version}</version>
+                <version>${alibaba.nacos.discovery.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-starter-openfeign</artifactId>
-                <version>${starter-openfeign-version}</version>
+                <version>${starter.openfeign.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-web</artifactId>
-                <version>${starter-web-version}</version>
+                <version>${spring.boot.version}</version>
             </dependency>
 
             <!-- https://mvnrepository.com/artifact/com.alibaba.cloud/spring-cloud-starter-alibaba-sentinel -->
             <dependency>
                 <groupId>com.alibaba.cloud</groupId>
                 <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
-                <version>${alibaba-sentinel-version}</version>
+                <version>${alibaba.sentinel.version}</version>
             </dependency>
 
             <!-- https://mvnrepository.com/artifact/com.alibaba.csp/sentinel-datasource-nacos -->
             <dependency>
                 <groupId>com.alibaba.csp</groupId>
                 <artifactId>sentinel-datasource-nacos</artifactId>
-                <version>${sentinel-datasource-nacos-version}</version>
+                <version>${sentinel.datasource.nacos.version}</version>
                 <!--            <scope>test</scope>-->
             </dependency>
 
             <dependency>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
-                <version>${lombok-version}</version>
+                <version>${lombok.version}</version>
                 <optional>true</optional>
             </dependency>
 
@@ -109,8 +111,19 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>${maven-plugin-version}</version>
+                <version>${spring.boot.version}</version>
             </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven-compiler-plugin-version}</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+
         </plugins>
     </build>
 
