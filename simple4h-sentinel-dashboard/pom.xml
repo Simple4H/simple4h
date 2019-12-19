@@ -4,13 +4,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.2.1.RELEASE</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <groupId>com.simple4h</groupId>
+        <artifactId>simple4h</artifactId>
+        <version>0.0.1</version>
     </parent>
 
-    <artifactId>sentinel-dashboard</artifactId>
+    <artifactId>simple4h-sentinel-dashboard</artifactId>
     <packaging>jar</packaging>
 
     <properties>
@@ -21,6 +20,12 @@
     </properties>
 
     <dependencies>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+
         <!-- https://mvnrepository.com/artifact/com.alibaba.csp/sentinel-web-servlet -->
         <dependency>
             <groupId>com.alibaba.csp</groupId>
@@ -123,11 +128,13 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
+            <version>4.12</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.mockito</groupId>
             <artifactId>mockito-core</artifactId>
+            <version>3.1.0</version>
             <scope>test</scope>
         </dependency>
         <dependency>
@@ -145,6 +152,7 @@
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
+            <version>3.9</version>
             <scope>test</scope>
         </dependency>
         <dependency>
