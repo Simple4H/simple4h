@@ -14,6 +14,7 @@
         <module>simple4h-user</module>
         <module>simple4h-gateway</module>
         <module>simple4h-common</module>
+        <module>simple4h-sentinel-dashboard</module>
     </modules>
 
     <properties>
