@@ -15,15 +15,17 @@ nacos-all/console/src/main/java/com/alibaba/nacos/Nacos.java
 
 ​	3.1, 在nacos添加配置文件
 
-	{
-	    "resource": "/user/get_info",
-	    "limitApp": "default",
-	    "grade": 1,
-	    "count": 1,
-	    "strategy": 0,
-	    "controlBehavior": 0,
-	    "clusterMode": false
-	}
+	[
+        {
+            "resource": "/user/get_info",
+            "limitApp": "default",
+            "grade": 1,
+            "count": 1,
+            "strategy": 0,
+            "controlBehavior": 0,
+            "clusterMode": false
+        }
+    ]
 ​	3.2,添加gateway配置
 
 	{
