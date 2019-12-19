@@ -15,28 +15,29 @@ nacos-all/console/src/main/java/com/alibaba/nacos/Nacos.java
 
 ​	3.1, 在nacos添加配置文件
 
-​	`[
+	{
+	    "resource": "/user/get_info",
+	    "limitApp": "default",
+	    "grade": 1,
+	    "count": 1,
+	    "strategy": 0,
+	    "controlBehavior": 0,
+	    "clusterMode": false
+	}
+​	3.2,添加gateway配置
 
-​    {
-
-​        "resource": "/user/get_info",
-
-​        "limitApp": "default",
-
-​        "grade": 1,
-
-​        "count": 1,
-
-​        "strategy": 0,
-
-​        "controlBehavior": 0,
-
-​        "clusterMode": false
-
-​    }
-
-]`
-
+	{
+	"filters": [],
+	"id": "user_route",
+	"order": 0,
+	"predicates": [{
+	    "args": {
+	        "pattern": "/user"
+	    },
+	    "name": "Path"
+	}],
+	"uri": "http://www.baidu.com"
+	}
 4，启动sentinel
 
 5，启动相关服务
