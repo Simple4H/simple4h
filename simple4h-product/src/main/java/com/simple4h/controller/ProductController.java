@@ -1,5 +1,6 @@
 package com.simple4h.controller;
 
+import com.simple4h.response.ServerResponse;
 import com.simple4h.service.IProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -18,7 +19,7 @@ public class ProductController {
     private IProductService iProductService;
 
     @GetMapping("get_name")
-    public String getProductName(String name) {
+    public ServerResponse<String> getProductName(String name) {
         return iProductService.getProductName(name);
     }
 }
