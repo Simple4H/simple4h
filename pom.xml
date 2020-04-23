@@ -30,6 +30,7 @@
         <lombok.version>1.18.10</lombok.version>
         <cloud.gateway.version>2.2.0.RELEASE</cloud.gateway.version>
         <maven-compiler-plugin-version>3.8.1</maven-compiler-plugin-version>
+        <nacos-client-api-version>1.2.1</nacos-client-api-version>
     </properties>
 
     <dependencyManagement>
@@ -102,6 +103,13 @@
                 <artifactId>lombok</artifactId>
                 <version>${lombok.version}</version>
                 <optional>true</optional>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/com.alibaba.nacos/nacos-api -->
+            <dependency>
+                <groupId>com.alibaba.nacos</groupId>
+                <artifactId>nacos-api</artifactId>
+                <version>${nacos-client-api-version}</version>
             </dependency>
 
         </dependencies>
