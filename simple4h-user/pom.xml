@@ -84,6 +84,12 @@
             <version>2.10.1</version>
         </dependency>
 
+        <dependency>
+            <groupId>com.simple4h</groupId>
+            <artifactId>simple4h-common</artifactId>
+            <version>0.0.8-RELEASE</version>
+        </dependency>
+
     </dependencies>
 
     <build>

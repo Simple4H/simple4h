@@ -1,6 +1,6 @@
 package com.simple4h.controller;
 
-import com.simple4h.feign.IProductFeign;
+import com.simple4h.response.ServerResponse;
 import com.simple4h.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,7 +18,7 @@ public class UserController {
     private IUserService iUserService;
 
     @RequestMapping("get_info")
-    public String getInfo(String username) {
+    public ServerResponse<String> getInfo(String username) {
         return iUserService.getUserInfo(username);
     }
 }

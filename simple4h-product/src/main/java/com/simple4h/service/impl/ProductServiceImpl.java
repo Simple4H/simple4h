@@ -1,5 +1,6 @@
 package com.simple4h.service.impl;
 
+import com.simple4h.response.ServerResponse;
 import com.simple4h.service.IProductService;
 import org.springframework.stereotype.Service;
 
@@ -11,7 +12,7 @@ import org.springframework.stereotype.Service;
 public class ProductServiceImpl implements IProductService {
 
     @Override
-    public String getProductName(String name) {
-        return "product name is " + name;
+    public ServerResponse<String> getProductName(String name) {
+        return ServerResponse.createBySuccess("product name is " + name);
     }
 }

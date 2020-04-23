@@ -1,5 +1,6 @@
 package com.simple4h.feign;
 
+import com.simple4h.response.ServerResponse;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -12,5 +13,5 @@ import org.springframework.web.bind.annotation.RequestParam;
 public interface IProductFeign {
 
     @GetMapping("/product/get_name")
-    String getProductName(@RequestParam("name") String name);
+    ServerResponse<String> getProductName(@RequestParam("name") String name);
 }
