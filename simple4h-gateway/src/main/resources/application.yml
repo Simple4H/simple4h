@@ -7,6 +7,9 @@ spring:
     nacos:
       discovery:
         server-addr: nacos.cxm520hyq.com
+    sentinel:
+      transport:
+        dashboard: sentinel.cxm520hyq.com
 nacos:
   DATA_ID: gateway-config
   GROUP: DEFAULT_GROUP

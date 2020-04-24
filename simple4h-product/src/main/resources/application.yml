@@ -17,3 +17,9 @@ spring:
             rule-type: flow
 server:
   port: 9000
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
