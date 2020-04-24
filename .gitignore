@@ -20,3 +20,4 @@ logs
 /nacos-all/istio/target/
 /nacos-all/naming/target/
 /nacos-all/test/target/
+/nacos-all/distribution/target/
