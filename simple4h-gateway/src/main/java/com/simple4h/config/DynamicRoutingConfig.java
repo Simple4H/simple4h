@@ -45,6 +45,9 @@ public class DynamicRoutingConfig implements ApplicationEventPublisherAware {
     @Value("${nacos.GROUP}")
     private String GROUP;
 
+    @Value("${spring.cloud.nacos.discovery.server-addr:127.0.0.1}")
+    private String nacosServer;
+
     @Autowired
     private RouteDefinitionWriter routeDefinitionWriter;
 
@@ -53,7 +56,7 @@ public class DynamicRoutingConfig implements ApplicationEventPublisherAware {
     @Bean
     public void refreshRouting() throws NacosException {
         Properties properties = new Properties();
-        properties.put(PropertyKeyConst.SERVER_ADDR, "127.0.0.1:8848");
+        properties.put(PropertyKeyConst.SERVER_ADDR, nacosServer);
 //        properties.put(PropertyKeyConst.NAMESPACE, "8282c713-da90-486a-8438-2a5a212ef44f");
         ConfigService configService = NacosFactory.createConfigService(properties);
         configService.addListener(DATA_ID, GROUP, new Listener() {
