@@ -98,7 +98,7 @@ public class DynamicRoutingConfig implements ApplicationEventPublisherAware {
 
         try {
             this.routeDefinitionWriter.delete(Mono.just(routeDefinition.getId()));
-            log.info("路由更新成功");
+            log.info("路由删除成功");
         } catch (Exception e) {
             log.error(e.getMessage(), e);
         }

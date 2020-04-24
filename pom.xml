@@ -22,6 +22,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <spring.boot.version>2.2.2.RELEASE</spring.boot.version>
         <spring.cloud.version>Hoxton.RELEASE</spring.cloud.version>
+        <spring-cloud-alibaba-dependencies-version>2.2.1.RELEASE</spring-cloud-alibaba-dependencies-version>
         <alibaba.nacos.discovery.version>0.9.0.RELEASE</alibaba.nacos.discovery.version>
         <starter.openfeign.version>2.2.0.RELEASE</starter.openfeign.version>
         <sentinel.datasource.nacos.version>1.7.0</sentinel.datasource.nacos.version>
@@ -47,6 +48,14 @@
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
                 <version>${spring.cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>${spring-cloud-alibaba-dependencies-version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>

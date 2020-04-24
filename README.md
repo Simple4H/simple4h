@@ -29,17 +29,31 @@ nacos-all/console/src/main/java/com/alibaba/nacos/Nacos.java
 ​	3.2,添加gateway配置
 
 	{
-	"filters": [],
-	"id": "user_route",
-	"order": 0,
-	"predicates": [{
-	    "args": {
-	        "pattern": "/user"
-	    },
-	    "name": "Path"
-	}],
-	"uri": "http://www.baidu.com"
-	}
+        "routeList": [
+            {
+                "filters": [],
+                "id": "user_route",
+                "order": 0,
+                "predicates": [
+                    {
+                        "args": {
+                            "pattern": "/user"
+                        },
+                        "name": "Path"
+                    }
+                ],
+                "uri": "http://www.baidu.com"
+            }
+        ],
+        "refreshGatewayRoute": "true"
+    }
 4，启动sentinel
 
 5，启动相关服务
+
+ps:
+nacos 编译命令
+进入nacos目录
+执行
+mvn -Prelease-nacos -Dmaven.test.skip=true clean install -U 
+在distribution tar包
