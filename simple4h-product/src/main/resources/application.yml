@@ -7,7 +7,7 @@ spring:
         server-addr: nacos.cxm520hyq.com
     sentinel:
       transport:
-        dashboard: sentinel.cxm520hyq.com
+        dashboard: 127.0.0.1:8843
       datasource:
         flow:
           nacos:
