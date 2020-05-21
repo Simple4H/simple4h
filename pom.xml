@@ -23,13 +23,13 @@
         <spring.boot.version>2.2.5.RELEASE</spring.boot.version>
         <spring.cloud.version>Hoxton.SR3</spring.cloud.version>
         <spring-cloud-alibaba-dependencies-version>2.2.1.RELEASE</spring-cloud-alibaba-dependencies-version>
-        <alibaba.nacos.discovery.version>0.9.0.RELEASE</alibaba.nacos.discovery.version>
+        <alibaba.nacos.discovery.version>2.2.0.RELEASE</alibaba.nacos.discovery.version>
         <starter.openfeign.version>2.2.0.RELEASE</starter.openfeign.version>
-        <sentinel.datasource.nacos.version>1.7.0</sentinel.datasource.nacos.version>
+        <sentinel.datasource.nacos.version>1.7.2</sentinel.datasource.nacos.version>
         <alibaba.sentinel.version>2.1.1.RELEASE</alibaba.sentinel.version>
         <maven.test.skip>true</maven.test.skip>
         <lombok.version>1.18.10</lombok.version>
-        <cloud.gateway.version>2.2.0.RELEASE</cloud.gateway.version>
+        <cloud.gateway.version>2.2.2.RELEASE</cloud.gateway.version>
         <maven-compiler-plugin-version>3.8.1</maven-compiler-plugin-version>
         <nacos-client-api-version>1.2.1</nacos-client-api-version>
     </properties>
@@ -73,9 +73,8 @@
                 </exclusions>
             </dependency>
 
-            <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-alibaba-nacos-discovery -->
             <dependency>
-                <groupId>org.springframework.cloud</groupId>
+                <groupId>com.alibaba.cloud</groupId>
                 <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
                 <version>${alibaba.nacos.discovery.version}</version>
             </dependency>
