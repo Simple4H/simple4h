@@ -10,6 +10,8 @@
     <artifactId>simple4h-common</artifactId>
     <version>0.0.8-RELEASE</version>
     <description>common utils</description>
+    <name>simple4h-common</name>
+    <packaging>jar</packaging>
 
     <properties>
         <java.version>1.8</java.version>
