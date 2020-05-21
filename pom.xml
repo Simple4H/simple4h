@@ -32,6 +32,9 @@
         <cloud.gateway.version>2.2.0.RELEASE</cloud.gateway.version>
         <maven-compiler-plugin-version>3.8.1</maven-compiler-plugin-version>
         <nacos-client-api-version>1.2.1</nacos-client-api-version>
+        <commons-lang3-version>3.9</commons-lang3-version>
+        <guava-version>28.1-jre</guava-version>
+        <stream-rabbit-version>3.0.4.RELEASE</stream-rabbit-version>
     </properties>
 
     <dependencyManagement>
@@ -125,6 +128,31 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-actuator</artifactId>
                 <version>${spring.boot.version}</version>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-stream-rabbit -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-stream-rabbit</artifactId>
+                <version>${stream-rabbit-version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${commons-lang3-version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava-version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>1.2.46</version>
             </dependency>
 
         </dependencies>
