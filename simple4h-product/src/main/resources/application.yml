@@ -15,6 +15,7 @@ spring:
             dataId: sentinel-dashboard
             groupId: DEFAULT_GROUP
             rule-type: flow
+
 server:
   port: 9000
 
