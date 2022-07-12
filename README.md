@@ -1,59 +1,18 @@
-# simple4h
-study Spring Cloud
+### Hi there 👋
 
-1, 需要导入数据库
+<div align=center><img src="https://github-readme-stats.vercel.app/api?username=simplecxm&hide=contribs&count_private=true&show_icons=true"/></div>
 
-nacos-all/distribution/conf/nacos-mysql.sql
+<!--
+**simplecxm/simplecxm** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+[![Simple4H's github stats](https://github-readme-stats.vercel.app/api?username=simplecxm&hide=contribs&count_private=true&show_icons=true)](https://github.com/simplecxm)
+Here are some ideas to get you started:
 
-2, 修改nacos数据库密
-
-nacos-all/console/src/main/resources/application.properties
-
-3，启动nacos(添加启动参数-Dnacos.standalone=true--单例)
-
-nacos-all/console/src/main/java/com/alibaba/nacos/Nacos.java
-
-​	3.1, 在nacos添加配置文件
-
-	[
-        {
-            "resource": "/user/get_info",
-            "limitApp": "default",
-            "grade": 1,
-            "count": 1,
-            "strategy": 0,
-            "controlBehavior": 0,
-            "clusterMode": false
-        }
-    ]
-​	3.2,添加gateway配置
-
-	{
-        "routeList": [
-            {
-                "filters": [],
-                "id": "user_route",
-                "order": 0,
-                "predicates": [
-                    {
-                        "args": {
-                            "pattern": "/user"
-                        },
-                        "name": "Path"
-                    }
-                ],
-                "uri": "http://www.baidu.com"
-            }
-        ],
-        "refreshGatewayRoute": "true"
-    }
-4，启动sentinel
-
-5，启动相关服务
-
-ps:
-nacos 编译命令
-进入nacos目录
-执行
-mvn -Prelease-nacos -Dmaven.test.skip=true clean install -U 
-在distribution tar包
+- 🔭 I’m currently working on ...
+- 🌱 I’m currently learning ...
+- 👯 I’m looking to collaborate on ...
+- 🤔 I’m looking for help with ...
+- 💬 Ask me about ...
+- 📫 How to reach me: ...
+- 😄 Pronouns: ...
+- ⚡ Fun fact: ...
+-->
