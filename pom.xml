@@ -33,7 +33,7 @@
         <maven-compiler-plugin-version>3.8.1</maven-compiler-plugin-version>
         <nacos-client-api-version>1.2.1</nacos-client-api-version>
         <commons-lang3-version>3.9</commons-lang3-version>
-        <guava-version>29.0-jre</guava-version>
+        <guava-version>32.0.0-jre</guava-version>
         <stream-rabbit-version>3.0.4.RELEASE</stream-rabbit-version>
     </properties>
 
