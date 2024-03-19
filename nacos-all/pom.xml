@@ -536,7 +536,7 @@
             <dependency>
                 <groupId>com.alibaba</groupId>
                 <artifactId>fastjson</artifactId>
-                <version>1.2.58</version>
+                <version>1.2.83</version>
             </dependency>
 
             <!-- javax libs-->
@@ -600,19 +600,19 @@
             <dependency>
                 <groupId>ch.qos.logback</groupId>
                 <artifactId>logback-classic</artifactId>
-                <version>1.2.3</version>
+                <version>1.2.13</version>
             </dependency>
 
             <dependency>
                 <groupId>ch.qos.logback</groupId>
                 <artifactId>logback-core</artifactId>
-                <version>1.2.3</version>
+                <version>1.2.13</version>
             </dependency>
 
             <dependency>
                 <groupId>org.apache.logging.log4j</groupId>
                 <artifactId>log4j-core</artifactId>
-                <version>2.13.2</version>
+                <version>2.17.1</version>
             </dependency>
 
             <dependency>
@@ -649,20 +649,20 @@
             <dependency>
                 <groupId>com.ning</groupId>
                 <artifactId>async-http-client</artifactId>
-                <version>1.7.17</version>
+                <version>1.9.0</version>
             </dependency>
 
             <!-- JDBC libs -->
             <dependency>
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
-                <version>8.0.18</version>
+                <version>8.0.28</version>
             </dependency>
 
             <dependency>
                 <groupId>org.apache.derby</groupId>
                 <artifactId>derby</artifactId>
-                <version>10.10.1.1</version>
+                <version>10.17.1.0</version>
             </dependency>
 
             <!-- Third-party libs -->
@@ -687,7 +687,7 @@
             <dependency>
                 <groupId>com.fasterxml.jackson.core</groupId>
                 <artifactId>jackson-databind</artifactId>
-                <version>2.10.0.pr1</version>
+                <version>2.12.7.1</version>
             </dependency>
             <dependency>
                 <groupId>org.codehaus.jackson</groupId>
@@ -728,7 +728,7 @@
             <dependency>
                 <groupId>org.apache.mina</groupId>
                 <artifactId>mina-core</artifactId>
-                <version>2.0.0-RC1</version>
+                <version>2.0.22</version>
             </dependency>
 
             <dependency>
@@ -758,7 +758,7 @@
             <dependency>
                 <groupId>io.grpc</groupId>
                 <artifactId>grpc-protobuf</artifactId>
-                <version>1.15.0</version>
+                <version>1.53.0</version>
             </dependency>
             <dependency>
                 <groupId>io.grpc</groupId>
@@ -774,7 +774,7 @@
             <dependency>
                 <groupId>com.google.protobuf</groupId>
                 <artifactId>protobuf-java</artifactId>
-                <version>3.8.0</version>
+                <version>3.16.3</version>
             </dependency>
             <dependency>
                 <groupId>io.grpc</groupId>

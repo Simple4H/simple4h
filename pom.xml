@@ -20,7 +20,7 @@
     <properties>
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <spring.boot.version>2.2.6.RELEASE</spring.boot.version>
+        <spring.boot.version>2.5.12</spring.boot.version>
         <spring.cloud.version>Hoxton.SR3</spring.cloud.version>
         <spring-cloud-alibaba-dependencies-version>2.2.1.RELEASE</spring-cloud-alibaba-dependencies-version>
         <alibaba.nacos.discovery.version>0.9.0.RELEASE</alibaba.nacos.discovery.version>
@@ -33,7 +33,7 @@
         <maven-compiler-plugin-version>3.8.1</maven-compiler-plugin-version>
         <nacos-client-api-version>1.2.1</nacos-client-api-version>
         <commons-lang3-version>3.9</commons-lang3-version>
-        <guava-version>29.0-jre</guava-version>
+        <guava-version>32.0.0-jre</guava-version>
         <stream-rabbit-version>3.0.4.RELEASE</stream-rabbit-version>
     </properties>
 
@@ -152,7 +152,7 @@
             <dependency>
                 <groupId>com.alibaba</groupId>
                 <artifactId>fastjson</artifactId>
-                <version>1.2.46</version>
+                <version>1.2.83</version>
             </dependency>
 
         </dependencies>
