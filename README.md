@@ -25,7 +25,7 @@
 
 <br/>
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=simple4h&hide_border=true"/>
+<img src="https://streak-stats.demolab.com/?user=simple4h&hide_border=true"/>
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0969DA&height=120&section=footer"/>
 
