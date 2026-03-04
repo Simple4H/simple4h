@@ -14,15 +14,6 @@
 
 <br/>
 
-[![trophy](https://github-profile-trophy.vercel.app/?username=simple4h&no-frame=true&row=1&column=7&cache_seconds=1800)](https://github.com/ryo-ma/github-profile-trophy)
-
-<br/>
-
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=simple4h&show_icons=true&hide_border=true&cache_seconds=1800"/>&nbsp;&nbsp;
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=simple4h&layout=compact&hide_border=true&cache_seconds=1800"/>
-
-<br/>
-
 <img src="https://streak-stats.demolab.com/?user=simple4h&hide_border=true"/>
 
 <br/>
