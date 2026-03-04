@@ -1,7 +1,5 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0969DA&height=120&section=header&fontColor=fff"/>
-
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=0969DA&center=true&vCenter=true&width=435&lines=Hi+there%2C+I'm+Simple4H+%F0%9F%91%8B;Java+%2F+Spring+Developer;Welcome+to+my+GitHub!)](https://git.io/typing-svg)
 
 <br/>
@@ -27,6 +25,16 @@
 
 <img src="https://streak-stats.demolab.com/?user=simple4h&hide_border=true"/>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0969DA&height=120&section=footer"/>
+<br/>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/simple4h/simple4h/output/github-contribution-grid-snake-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/simple4h/simple4h/output/github-contribution-grid-snake.svg"/>
+  <img alt="snake" src="https://raw.githubusercontent.com/simple4h/simple4h/output/github-contribution-grid-snake.svg"/>
+</picture>
+
+<br/>
+
+![Profile Views](https://komarev.com/ghpvc/?username=simple4h&color=0969DA&style=flat-square&label=Profile+Views)
 
 </div>
