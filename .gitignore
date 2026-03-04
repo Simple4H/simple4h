@@ -21,3 +21,4 @@ logs
 /nacos-all/naming/target/
 /nacos-all/test/target/
 /nacos-all/distribution/target/
+/.claude/settings.local.json
